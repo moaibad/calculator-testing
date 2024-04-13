@@ -17,13 +17,15 @@ public class InputValidator {
         }
 	}
 	
-//	public boolean validateInputCount(String[] input) {
-//        if (input.length != 2) {
-//            System.out.println("Input harus terdiri dari dua bilangan.");
-//            return false;
-//        }
-//        return true;
-//    }
+	public boolean validateInputCount(String[] input) {
+		for (String str : input) {
+	        if (str.trim().isEmpty()) {
+	            System.out.println("Input harus terdiri dari 2 bilangan bulat.");
+	            return false;
+	        }
+	    }
+	    return true;
+    }
 	
 	
 	public boolean validateMathOperation(String operation) {

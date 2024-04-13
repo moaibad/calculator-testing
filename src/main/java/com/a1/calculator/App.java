@@ -14,8 +14,8 @@ public class App
     	
     	String[] input = inputHandler.getNumberInput();
     	
-    	if(inputValidator.validateNumericInput(input)) {
-    		System.out.println( "Hello World!");
+    	if(inputValidator.validateInputCount(input) && inputValidator.validateNumericInput(input)) {
+    		System.out.println( "Hello World! Bener nih");
     	}
     	else {
     		System.out.println( "Hello World!");
