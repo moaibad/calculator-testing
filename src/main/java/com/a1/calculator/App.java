@@ -10,16 +10,28 @@ public class App
     {
     	InputHandler inputHandler = new InputHandler();
     	InputValidator inputValidator = new InputValidator();
-    	MathOperation mathOperation = new MathOperation();
+    	Calculate calculate = new Calculate();
     	
     	String[] input = inputHandler.getNumberInput();
     	
     	if(inputValidator.validateInputCount(input) && inputValidator.validateNumericInput(input)) {
-    		System.out.println( "Hello World! Bener nih");
+    		
+    		int a = Integer.parseInt(input[0]);
+    		int b = Integer.parseInt(input[1]);
+    		String operator = inputHandler.getOperatorInput();
+    		
+    		if (inputValidator.validateMathOperation(operator)) {
+    			
+    			if (inputValidator.validateDivisionByZero(operator, b)) {
+    				calculate.calculateResult(a, b, operator);
+    			}
+    			
+    		}
     	}
     	else {
-    		System.out.println( "Hello World!");
+    		System.out.println( "Salaaaaahudin ilyas");
     	}
     	
     }
+    
 }
