@@ -3,12 +3,9 @@ package com.a1.calculator;
 public class InputValidator {
 	
 	public boolean validateNumericInput(String[] input) {
-		try {
+        try {
             for (String str : input) {
                 int num = Integer.parseInt(str);
-                if (num < Integer.MIN_VALUE || num > Integer.MAX_VALUE) {
-                    return false;
-                }
             }
             return true;
         } catch (NumberFormatException e) {
@@ -26,24 +23,21 @@ public class InputValidator {
 	    }
 	    return true;
     }
-	
-	
-	public boolean validateMathOperation(String operation) {
-        if (!operation.matches("[+\\-*/]")) {
+
+	public boolean validateMathOperator(String operator) {
+        if (!operator.matches("[+\\-*/]")) {
             System.out.println("Operasi tidak valid. Gunakan +, -, *, atau /.");
             return false;
         }
         return true;
     }
 	
-	public boolean validateDivisionByZero(String operation, int number) {
-        if (operation.equals("/") && number == 0) {
+	public boolean validateDivisionByZero(String operator, int number) {
+        if (operator.equals("/") && number == 0) {
             System.out.println("Pembagian oleh nol tidak diizinkan.");
             return false;
         }
         return true;
     }
-	
-	
-	
+
 }

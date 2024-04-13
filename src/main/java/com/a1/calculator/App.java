@@ -20,7 +20,7 @@ public class App
     		int b = Integer.parseInt(input[1]);
     		String operator = inputHandler.getOperatorInput();
     		
-    		if (inputValidator.validateMathOperation(operator)) {
+    		if (inputValidator.validateMathOperator(operator)) {
     			
     			if (inputValidator.validateDivisionByZero(operator, b)) {
     				calculate.calculateResult(a, b, operator);
