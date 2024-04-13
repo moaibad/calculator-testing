@@ -96,6 +96,11 @@ public class InputValidatorTest {
         input = "=";
         Assert.assertFalse(inputValidator.validateMathOperator(input));
         Assert.assertTrue(outputStream.toString().contains(expectedOutput));
+
+        // Test input String kosong
+        input = "";
+        Assert.assertFalse(inputValidator.validateMathOperator(input));
+        Assert.assertTrue(outputStream.toString().contains(expectedOutput));
     }
 
     @Test
