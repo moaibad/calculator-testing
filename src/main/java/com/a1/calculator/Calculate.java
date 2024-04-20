@@ -19,6 +19,7 @@ public class Calculate {
 	        	System.out.println("Hasil: " + mathOperation.divide(a, b));
 	        	break;
 		}
-
 	}
 }
+
+//meriksa operator dan bilangan 

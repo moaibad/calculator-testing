@@ -59,7 +59,7 @@ public class InputValidatorTest {
     @Test
     public void testValidateInputCount(){
         String[] input;
-        String expectedOutput = "Input harus terdiri dari 2 bilangan bulat.";
+        String expectedOutput = "Input harus terdapat operand dan tidak boleh kosong.";
 
         // Test input valid
         input = new String[]{"412", "21"};

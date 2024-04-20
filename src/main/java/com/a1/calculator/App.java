@@ -15,7 +15,6 @@ public class App
     	String[] input = inputHandler.getNumberInput();
     	
     	if(inputValidator.validateInputCount(input) && inputValidator.validateNumericInput(input)) {
-    		
     		int a = Integer.parseInt(input[0]);
     		int b = Integer.parseInt(input[1]);
     		String operator = inputHandler.getOperatorInput();
@@ -27,11 +26,7 @@ public class App
     			}
     			
     		}
-    	}
-    	else {
-    		System.out.println( "Salaaaaahudin ilyas");
-    	}
-    	
     }
-    
+	System.out.println( "Aplikasi kalkulator selesai." );
+	}
 }

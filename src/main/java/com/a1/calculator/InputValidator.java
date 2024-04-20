@@ -17,7 +17,7 @@ public class InputValidator {
 	public boolean validateInputCount(String[] input) {
 		for (String str : input) {
 	        if (str.trim().isEmpty()) {
-	            System.out.println("Input harus terdiri dari 2 bilangan bulat.");
+	            System.out.println("Input harus terdapat operand dan tidak boleh kosong.");
 	            return false;
 	        }
 	    }
