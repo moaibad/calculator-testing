@@ -29,7 +29,6 @@ Proyek ini dikumpulkan untuk memenuhi sebagian persyaratan kelulusan mata kuliah
 
 
 
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
